@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador - Cainicela</title>
+    <!-- Aqui colocamos las conexiones con las hojas de estilo y las funciones -->
+    <link rel="stylesheet" href="/CSS/reset.css">
+    <link rel="stylesheet" href="/CSS/Styles.css">
+</head>
+<body>
+    <!-- Aqui colocamos la cabezera de la pagina -->
+    <header>
+        <div class="logo_alura">
+            <h1><img src="/IMG/logo-alura.png" alt="Logo de ALura"></h1>
+        </div>
+    </header>
+    <!-- Aqui va el cuerpo de la pagina -->
+    <main>
+        <section>
+            <textarea class="ingresar-texto" cols="40" rows="6" placeholder="Ingresa el texto aqui"></textarea>
+            <div class="advertencia">
+                <div class="exclamacion">
+                    <img src="/IMG/bi_exclamation-circle-fill.png" alt="Signo de exclamacion">
+                </div>
+                <div class="texto-advertencia">
+                    <p>Solo letras minusculas y sin acento</p>
+                </div>
+            </div>
+            <div class="botones">
+                <button class="encriptar" onclick="btnEncriptar()">Encriptar</button>
+                <button class="desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+            </div>
+        </section>
+        <section>
+            <textarea id="texto" class="mensaje" cols="30" rows="19"></textarea>
+            <div>
+              <button class="copiar" onclick="copiar()">Copiar</button>  
+            </div>
+            <div>
+                <p class="texto1">Ningun mensaje fue encontrado</p>
+                <p class="texto2">Ingresa el texto que desees encriptar o desencriptar</p>
+            </div>
+        </section>
+    </main>
+    <!-- Funciones  -->
+    <script src="/JS/funtions.js"></script>
+    <!-- Aqui va el pie de pagina :v -->
+    <footer>
+
+    </footer>
+
+
+</body>
+</html>
